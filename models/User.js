@@ -10,7 +10,6 @@ const UserSchema = new mongoose.Schema({
     role:{type:'string', required: true},
     status:{type:'string', required: true},
 })
-
 const UserDb = mongoose.model('UserDb', UserSchema);
 
 module.exports = UserDb;

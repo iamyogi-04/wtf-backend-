@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken');
 const JWT_SECRET = process.env.SECRET_KEY;
 
 
-//registering the user for the first time
+//registering the user 
 router.post("/register",[
   body('email', 'Enter a valid email').isEmail(),
   body('password', 'Password must be atleast 8 characters').isLength({ min: 8 }),
